@@ -1,0 +1,70 @@
+---
+interface Props{
+    number:string;
+    title:string;
+    paragraph:string;
+}
+
+const {number, title, paragraph} = Astro.props;
+
+---
+<div class="cuadro">
+<h1>
+    {number}
+</h1>
+
+<h2>
+    {title}
+</h2>
+
+<p>
+    {paragraph}
+</p>
+</div>
+
+<style>
+.cuadro{
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  border-width: .2px;
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.075);
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px .8px rgba(40, 40, 43, 0.2); 
+  backdrop-filter: blur(5px);
+}
+
+  h2{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+}
+
+h1{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  color:#ab8634;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/****************** Responsive ******************/
+
+@media screen and (min-width:360px) and (max-width:736px) {
+  .cuadro{
+   padding-left:10px;
+  padding-right:10px;
+}
+}
+</style>

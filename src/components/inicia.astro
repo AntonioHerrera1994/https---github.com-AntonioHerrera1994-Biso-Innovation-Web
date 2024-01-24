@@ -1,0 +1,99 @@
+---
+interface Props{
+    title:string;
+    text:string;
+    button:string;
+href:string;
+}
+
+const {title, text, href, button} = Astro.props;
+---
+
+<div class="content-Get">
+
+    <h2>
+        {title}
+    </h2>
+
+    <p>
+        {text}
+    </p>
+
+    <a href={href}>
+        {button}
+       </a>
+
+    </div>
+    <style>
+        .content-Get{
+  
+  border: solid;
+  border-width: .5px;
+  border-radius: 25px;
+  border-color: #0000000a;
+  padding: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.397);
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 4px .8px rgba(40, 40, 43, 0.2); 
+ 
+}
+
+h2{
+    text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+
+p{
+    text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 18px;
+  padding-bottom: 35px; 
+}
+
+a{
+    color:white;
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 500;
+    background-color: #ab8634;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 425px;
+}
+@media screen and (min-width:360px) and (max-width:736px) {
+    .content-Get{
+padding: 30px;
+}
+h2{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  margin:0;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  
+}
+ p{
+  text-align: center;
+  font-size: 18px;
+  margin:0;
+  padding-bottom: 40px;
+}
+
+a{
+  text-align: center;
+  font-size: 18px;
+  margin:0;
+
+}
+}
+
+    </style>

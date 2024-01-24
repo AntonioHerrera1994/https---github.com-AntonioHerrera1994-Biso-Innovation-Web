@@ -1,0 +1,71 @@
+---
+
+interface Props{
+title:string;
+subtitle:string;
+button:string;
+href:string;
+
+}
+
+const { title, subtitle, button, href} = Astro.props;
+
+---
+          <h2>
+            {title}
+          </h2>
+          <h3>
+            {subtitle}
+         </h3>
+          <a href={href}>
+           {button}
+          </a>
+        
+  <style>
+ 
+a {
+  margin-right: 40px;
+  text-transform: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  background-color: #ab8634;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+  font-size: 3.5rem;
+  color:black;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  
+}
+
+h3 {
+  color: #000000;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding-bottom: 25px;
+
+}
+
+span{
+  color: #ab8634;
+}
+/* End Intro */
+
+/****************** Responsive ******************/
+
+@media screen and (min-width:360px) and (max-width:736px) {
+  h2,h3 {
+text-align:center;
+}
+
+}
+  </style>
