@@ -1,168 +1,131 @@
----
 import Layout from '../layouts/Layout.astro';
 import Intro from '../components/Intro.astro';
 import Services from '../components/services.astro';
 import Inicia from '../components/inicia.astro';
 
----
-
+<Fragment>
 <Layout title="BISO INNOVATION | ">
-	<main>
-		
-		
-			<section class="intro">
-				<div class="container">
-				  <div class="wrapper">
-					<div class="description">
-					<Intro
-					title="Bienvenido"
-					subtitle="Somos el primer corporativo conformado por Robots, Inteligencia Artificial y Humanos"
-					href="#"
-					button="Más Detalles"
-					/>
-					</div>
-					<video width="800"  autoplay loop muted>
-						<source src="http://joseantonioh17.sg-host.com/wp-content/uploads/2024/01/Video-para-Facebook-Emprendimiento-Delicado-Verde.mp4" type="video/webm">      
-					  </video> 
-				  </div>
-				 
-				  </div>
-				</section>
-				<!--End Intro-->
+<main>
 
-				  <!-- Start about-->
-<!-- Start about-->
+
+<section class="intro">
+<div class="container">
+<div class="wrapper">
+<div class="description">
+<Intro title="Bienvenido" subtitle="Somos el primer corporativo conformado por Robots, Inteligencia Artificial y Humanos" href="#" button="Más Detalles" />
+</div>
+<video width="800" autoplay loop muted>
+<source src="http://joseantonioh17.sg-host.com/wp-content/uploads/2024/01/Video-para-Facebook-Emprendimiento-Delicado-Verde.mp4" type="video/webm" />
+</video>
+</div>
+
+</div>
+</section>
+{/** End Intro*/}
+
+{/** Start about*/}
+{/** Start about*/}
 <section class="about">
-    <div class="container">
-       <div class="wrapper">
-        <img class="img-about"
-        src="IA.webp"
-        alt=""
-     
-      />
-        <div class="description-about">
-            <h4>SOBRE BISO INNOVATION</h4>
-            <h2>Parte de nuestra misión es empoderar a cada negocio mediante la Inteligencia Artificial.</h2>
-            <p>Análisis de datos, Machine learning, desarrollo e integraciones que permiten llevar a su empresa al siguiente nivel.</p>   
-        </div>
-       </div> 
-    </div>
-  </section>
-  <!-- End about-->
-				  
-  <!-- Services -->
-
-  <section class="services">
-    <div class="serv-cont">
-    <h4 >NUESTRO PROCESO</h4>
-            <h2 >Un proceso simple y ligero</h2>
-	<div class="grid">
-<Services 
-number="01"
-title="Delimitamos la solución"
-paragraph="Desde la perspectiva del cliente, del usuario, del stakeholder."
-/>
-
-<Services 
-number="02"
-title="Recabamos Datos"
-paragraph="Diseño de la solución e integraciones, Herramientas y apoyo en IA."
-/>
-
-<Services 
-number="03"
-title="Metodologías ágiles"
-paragraph="Desarrollo, entregables, funcionalidad, avance."
-/>
+<div class="container">
+<div class="wrapper">
+<img class="img-about" src="IA.webp" alt="" srcset="" />
+<div class="description-about">
+<h4>SOBRE BISO INNOVATION</h4>
+<h2>Parte de nuestra misión es empoderar a cada negocio mediante la Inteligencia Artificial.</h2>
+<p>Análisis de datos, Machine learning, desarrollo e integraciones que permiten llevar a su empresa al siguiente nivel.</p>
 </div>
 </div>
-  </section>
-  <!-- End Services -->
-		
-  <!-- Start Inicia -->
+</div>
+</section>
+{/** End about*/}
 
-  <section class="GetintTouch">
-    <div class="container">
+{/** Services */}
 
-      <Inicia
-      title="Inicia con nosotros hoy"
-      text="Nuestros expertos estan listos para atenderle"
-      href="#"
-      button="Más Detalles"
-      />
+<section class="services">
+<div class="serv-cont">
+<h4>NUESTRO PROCESO</h4>
+<h2>Un proceso simple y ligero</h2>
+<div class="grid">
+<Services number="01" title="Delimitamos la solución" paragraph="Desde la perspectiva del cliente, del usuario, del stakeholder." />
 
-    </div>
+<Services number="02" title="Recabamos Datos" paragraph="Diseño de la solución e integraciones, Herramientas y apoyo en IA." />
 
-  </section>
-    <!-- End Inicia -->
-	
-    <!-- start footer-->
+<Services number="03" title="Metodologías ágiles" paragraph="Desarrollo, entregables, funcionalidad, avance." />
+</div>
+</div>
+</section>
+{/** End Services */}
+
+{/** Start Inicia */}
+
+<section class="GetintTouch">
+<div class="container">
+
+<Inicia title="Inicia con nosotros hoy" text="Nuestros expertos estan listos para atenderle" href="#" button="Más Detalles" />
+
+</div>
+
+</section>
+{/** End Inicia */}
+
+{/** start footer*/}
 <footer class="footer">
-  <div class=".footer-cont">
-    <div class="footer-grid">
-  <div class="first">
-  <img class="footer-img" 
-  src="https://i2.wp.com/bisoinnovation.com/wp-content/uploads/2021/09/cropped-BISO-INNOVATION-LOGO.png?resize=300%2C96&ssl=1"
-  alt="BisoInnovation"
-  />
-    <p>
-      Somos el primer corporativo conformado por Robots, Inteligencia Artificial y Humanos.
-    </p>
-  </div>
-  <div class="third">
-    <h2>
-      Social media marketing
-    </h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti qui soluta cupiditate
-    </p>
-  </div>
-  <div class="second">
-    <h2>
-  Contacto</h2>
-  <div class="content">
-  <ul>
-    <li>
-      <img
-      src="assets/email-white.png" style="width: 20px; height: 20px;"
-      />
-      <a href="#" style="color:white;font-size: 16px;">+52-664-360-9345</a>
-    </li>
-    <br>
-    <li>
-      <img
-      src="assets/telefono-white.png" style="width: 20px; height: 20px;"
-      />
-      <a href="#" style="color:white;font-size: 16px;text-transform: none;">info@bisoinnovation.com</a>
-    </li>
-    <br>
-    <li>
-      <img
-      src="assets/ubicacion-white.png" style="width: 20px; height: 20px;"
-      />
-      <a href="#" style="color:white;font-size: 16px;text-transform: none;">Torre Platino L7, Zona Urbana Rio Tijuana, Tijuana, B.C. México</a>
-    </li>
-  </ul>
-  </div>
-  </div>
-  </div>
-  <br>
-  <div class="privacidad">
-  <p class="tex1" style="text-align: center; border-top: solid; border-width: 1px; border-color: rgba(255, 255, 255, 0.219); padding-top: 30px; margin-right: 160px; margin-left: 160px; font-size: 15px;">
-    Biso Digital@ 2023. Todos los 
-    <a href="#" style="color: #ab8634; text-transform: none;font-size: 15px; font-weight: 600;">derechos reservados</a>. 
-    <a href="#" style="color: #ab8634;text-transform: none;font-size: 15px;font-weight: 600;">Términos y condiciones</a>.
-    <a href="#" style="color: #ab8634;text-transform: none;font-size: 15px;font-weight: 600;">Aviso de privacidad</a>.
-  </p>
-  </div>
-  </div>
-  </footer>
-    <!-- End Footer -->
-		
-	</main>
+<div class=".footer-cont">
+<div class="footer-grid">
+<div class="first">
+<img class="footer-img" src="https://i2.wp.com/bisoinnovation.com/wp-content/uploads/2021/09/cropped-BISO-INNOVATION-LOGO.png?resize=300%2C96&ssl=1" alt="BisoInnovation" />
+<p>
+Somos el primer corporativo conformado por Robots, Inteligencia Artificial y Humanos.
+</p>
+</div>
+<div class="third">
+<h2>
+Social media marketing
+</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti qui soluta cupiditate
+</p>
+</div>
+<div class="second">
+<h2>
+Contacto</h2>
+<div class="content">
+<ul>
+<li>
+<img src="assets/email-white.png" style="width: 20px; height: 20px;" />
+<a href="#" style="color:white;font-size: 16px;">+52-664-360-9345</a>
+</li>
+<br />
+<li>
+<img src="assets/telefono-white.png" style="width: 20px; height: 20px;" />
+<a href="#" style="color:white;font-size: 16px;text-transform: none;">info@bisoinnovation.com</a>
+</li>
+<br />
+<li>
+<img src="assets/ubicacion-white.png" style="width: 20px; height: 20px;" />
+<a href="#" style="color:white;font-size: 16px;text-transform: none;">Torre Platino L7, Zona Urbana Rio Tijuana, Tijuana, B.C. México</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<br />
+<div class="privacidad">
+<p class="tex1" style="text-align: center; border-top: solid; border-width: 1px; border-color: rgba(255, 255, 255, 0.219); padding-top: 30px; margin-right: 160px; margin-left: 160px; font-size: 15px;">
+Biso Digital@ 2023. Todos los
+<a href="#" style="color: #ab8634; text-transform: none;font-size: 15px; font-weight: 600;">derechos reservados</a>.
+<a href="#" style="color: #ab8634;text-transform: none;font-size: 15px;font-weight: 600;">Términos y condiciones</a>.
+<a href="#" style="color: #ab8634;text-transform: none;font-size: 15px;font-weight: 600;">Aviso de privacidad</a>.
+</p>
+</div>
+</div>
+</footer>
+{/** End Footer */}
+
+</main>
 </Layout>
 
-<style>
+<style>{`
 
 :root {
   --mainColor: #f5f8fd;
@@ -517,4 +480,6 @@ margin: 0;
  
 /* end footer */
 }
-</style>
+`}</style>
+
+</Fragment>;
