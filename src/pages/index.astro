@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Intro from '../components/Intro.astro';
 import Services from '../components/services.astro';
 import Inicia from '../components/inicia.astro';
-
+import { Image } from 'astro:assets';
+import myImage from "../assets/IA.png"; // La imagen es 1600x900
 ---
 
 <Layout title="BISO INNOVATION | ">
@@ -35,11 +36,7 @@ import Inicia from '../components/inicia.astro';
 <section class="about">
     <div class="container">
        <div class="wrapper">
-        <img class="img-about"
-        src="IA.webp"
-        alt=""
-     
-      />
+        <Image src={myImage} alt="Cabeza IA" />
         <div class="description-about">
             <h4>SOBRE BISO INNOVATION</h4>
             <h2>Parte de nuestra misión es empoderar a cada negocio mediante la Inteligencia Artificial.</h2>
